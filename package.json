@@ -1,0 +1,19 @@
+{
+  "name": "global-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cypress:open": "cypress open --config-file cypress.config.js",
+    "cypress:run": "cypress run --config-file cypress.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^12.5.1",
+    "cypress-wait-until": "^1.7.2"
+  }
+}
