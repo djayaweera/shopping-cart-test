@@ -9,7 +9,7 @@ Cypress.Commands.add("checkCartTotal", (expectedTotal) => {
     cy.get('strong > .price').invoke('text').then((text) => {
       const cartTotal = Number.parseFloat(text.replace(/[^\d.-]/g, ''));
         if (cartTotal !== expectedTotal) {
-            cy.log(`Expected Cart total should be £${expectedTotal}.00, but actual total is £${cartTotal}.00`);
+            cy.log(`Expected Cart total should be $${expectedTotal}.00, but actual total is $${cartTotal}.00`);
         } else {
             cy.log(`Cart total is equal to ${expectedTotal}.`);
         }
